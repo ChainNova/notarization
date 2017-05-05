@@ -1,0 +1,34 @@
+    <div class="Tray">
+        <a href="https://wutongtree.com" class="Logo" target="blank">梧桐树</a>
+        <ul class="navs navs1">
+            <li class="nav on">
+                <a href="{{.Website}}" target="blank">梧桐树</a>
+            </li>
+            <li class="nav">
+                <a href="/list">历史签名</a>
+            </li>
+            <li class="nav">
+                <a href="/sign">文件签名</a>
+            </li>
+            <li class="nav">
+                <a href="/verify">签名验证</a>
+            </li>
+            <li class="nav">
+                <a href="/static/explorer/index.html" target="blank">查看区块链</a>
+            </li>
+        </ul>
+        <ul class="navs2">
+            {{if .Username}}
+                <li class="nav2">
+                    <p class="navbar-text">您好，{{.Username}}</p>
+                </li>
+                <li class="nav2">
+                    <a href="/logout">退出</a>
+                </li>
+            {{else}}
+                <li class="nav2">
+                    <a href="/login">登录</a>
+                </li>
+            {{end}}
+        </ul>
+    </div>

@@ -1,0 +1,1 @@
+const REST_ENDPOINT = "http://172.16.32.74:7050";
